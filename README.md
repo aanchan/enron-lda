@@ -342,7 +342,7 @@ models the Gensim library was used and [this blog post](https://www.machinelearn
 was followed. This solution exercise does borrow code from this blog post and is referenced
 in the comments. 
 
-####Training LDA models
+#### Training LDA models
 Models were created using the script [train_lda.py](train_lda.py). The folder that contains
 the final model is in [exp/v6/topics_5](exp/v6/topics_5). This is also set as a config
 folder name is also set as a config variable in [config.py](config.py). The number of topics
@@ -377,13 +377,13 @@ tokens after lemmatization and stop-word removal are available in the pickle fil
 Topic models were trained for 2,4, 5, 10 and 20 topics. Of all of these the highest
 coherence score was obtained for a model with 5 topics with a coherence score of 0.523 
 (Reference log-file : [model.log](exp/v6/topics_5/model.log)). The higher the coherence
-score the lesser the topic overlap. The visualization for this models is available [here](https://htmlpreview.github.io/?https://github.com/aanchan/enron-lda/blob/main/exp/v6/topics_5/LDA_Visualization.html)
+score the lesser the topic overlap. The **visualization** for this models is available [here](https://htmlpreview.github.io/?https://github.com/aanchan/enron-lda/blob/main/exp/v6/topics_5/LDA_Visualization.html)
 
 There is a disadvantage here though, since there can  be documents with extremely rare terms. Here is an example of a [NSFW email](/home/aanchan/work/global_relay/src/data/maildir/lenhart-m/sent/sent/780.) 
 whose expletive filled terms occur only a few hundred times in the corpus. To allow for more
 specificity for the purpose of this exercise a model with 10 topics. This does mean that there
 is greater overlap in the topics of this model and hence a lower coherence score of 0.43. (Reference log-file : [model.log](exp/v6/topics_10/model.log)).
-This visualization for this topic model is available [here](https://htmlpreview.github.io/?https://github.com/aanchan/enron-lda/blob/main/exp/v6/topics_10/LDA_Visualization.html).
+This **visualization** for this topic model is available [here](https://htmlpreview.github.io/?https://github.com/aanchan/enron-lda/blob/main/exp/v6/topics_10/LDA_Visualization.html).
 The topics appear as follows.
 
 ```
