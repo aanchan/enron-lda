@@ -37,7 +37,7 @@ For all other topics the response looks like this JSON.
 ```
 
 ### To run on a local machine 
-Run the following commands on a local machine:
+Run the following commands on a local machine using - Python 3.6.9:
 ```
 python3 -m venv env/global_relay
 source env/global_relay/bin/activate
