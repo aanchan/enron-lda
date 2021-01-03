@@ -1,0 +1,6 @@
+
+Coherence Score: 0.45532437490096545
+Perplexity: -7.956599099774463
+(0, '0.012*"good" + 0.011*"week" + 0.009*"take" + 0.009*"look" + 0.008*"well" + 0.008*"come" + 0.007*"back" + 0.007*"meeting" + 0.007*"day" + 0.006*"give"')
+(1, '0.015*"price" + 0.015*"gas" + 0.013*"product" + 0.011*"power" + 0.010*"shall" + 0.010*"month" + 0.009*"trade" + 0.009*"customer" + 0.009*"contract" + 0.009*"transaction"')
+(2, '0.013*"counterparty" + 0.013*"list" + 0.012*"credit" + 0.012*"copy" + 0.010*"change" + 0.010*"master" + 0.010*"regard" + 0.010*"request" + 0.010*"form" + 0.009*"information"')

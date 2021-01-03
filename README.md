@@ -33,10 +33,169 @@ For all other topics the response looks like this JSON.
 ```
 {
   sentiment: negative
-  topic: 'Calls and Emails'
 }
 ```
 
+###To run on a local machine 
+Run the following commands on a local machine:
+```
+python3 -m venv env/global_relay
+source env/global_relay/bin/activate
+pip install -r requirements.txt
+export FLASK_APP=application.py
+flask run
+```
+To send a request from a client like POSTMAN can be done
+by getting this example request available as a POSTMAN collection: [here](https://www.getpostman.com/collections/54c136d8c6f9328e900f).
+ 
+This sets up the body to have the following e-mail string :
+```
+"Message-ID: <18599553.1075842495069.JavaMail.evans@thyme>\nDate: Thu, 10 Feb 2000 03:29:00 -0800 (PST)\nFrom: drew.fossum@enron.com\nTo: bill.cordes@enron.com, dave.neubauer@enron.com, steven.harris@enron.com\nSubject: LRC Joint Venture\nMime-Version: 1.0\nContent-Type: text/plain; charset=us-ascii\nContent-Transfer-Encoding: 7bit\nX-From: Drew Fossum\nX-To: Bill Cordes, Dave Neubauer, Steven Harris\nX-cc: \nX-bcc: \nX-Folder: \\Drew_Fossum_Dec2000_June2001_1\\Notes Folders\\Sent\nX-Origin: FOSSUM-D\nX-FileName: dfossum.nsf\n\nI don't see any problem with this transaction since it appears to be limited \nto Louisiana assets, but the issue of whether we are impacted by the \nnoncompete agreement strikes me as a commercial call.  Please let me know if \nyou have any problem with the transaction and I will pursue it.  Thanks.  DF \n---------------------- Forwarded by Drew Fossum/ET&S/Enron on 02/10/2000 \n11:25 AM ---------------------------\n\n\n\nMichael Moran\n02/09/2000 01:58 PM\nTo: Louis Soldano/ET&S/Enron@ENRON, Dorothy McCoppin/FGT/Enron@ENRON, Phil \nLowry/OTS/Enron@ENRON\ncc:  \n\nSubject: LRC Joint Venture\n\nPlease see the attached and let me know if you have any problems so that GPG \ncan respond to Brian Redmond.\n---------------------- Forwarded by Michael Moran/GPGFIN/Enron on 02/09/2000 \n01:55 PM ---------------------------\n\n\nBrian Redmond@ECT\n02/09/2000 01:44 PM\nTo: Sherri Reinartz@ENRON, J Mark Metts/NA/Enron@Enron, Stephanie J \nHarris@ENRON_DEVELOPMENT, Rob Walls/ENRON_DEVELOPMENT@ENRON_DEVELOPMENT, Rex \nRogers/Corp/Enron@Enron, Charles Cheek/Corp/Enron@ENRON, Peggy Fowler@ENRON, \nAl Alexanderson/Enron@Gateway, Rebecca P Mark/HOU/AZURIX@AZURIX, John \nAle/HOU/AZURIX@AZURIX, Mark Frevert/LON/ECT@ECT, Michael R Brown/LON/ECT@ECT, \nMichael Burke/Houston/Eott@Eott, Steve Duffy/Houston/Eott@Eott, Cliff \nBaxter/HOU/ECT@ECT, Greg Whalley/HOU/ECT@ECT, Mark E Haedicke/HOU/ECT@ECT, \nTimothy J Detmering/HOU/ECT@ECT, Bill Donovan/EPSC/HOU/ECT@ECT, Elizabeth \nLabanowski/EPSC/HOU/ECT@ECT, Stanley Horton/Corp/Enron@Enron, Michael \nMoran/ET&S/Enron@ENRON, Bill Cordes/ET&S/Enron@ENRON, Larry \nDeRoin/NPNG/Enron@ENRON, Janet Place/NPNG/Enron@ENRON, Ken Rice/Enron \nCommunications@Enron Communications, Kristina Mordaunt/Enron \nCommunications@Enron Communications, Andrew S Fastow/HOU/ECT@ECT, Scott \nSefton/HOU/ECT@ECT, Shirley A Hudler/HOU/ECT@ECT, Karen S Owens@ees, Vicki \nSharp/HOU/EES@EES, Ken Karas/EWC/Enron@Enron, Adam Umanoff/EWC/Enron@Enron, \nJoe Kishkill/ENRON_DEVELOPMENT@ENRON_DEVELOPMENT, Randy \nYoung/ENRON_DEVELOPMENT@ENRON_DEVELOPMENT, James A \nHughes/ENRON_DEVELOPMENT@ENRON_DEVELOPMENT, Bruce \nLundstrom/ENRON_DEVELOPMENT@ENRON_DEVELOPMENT, Larry L \nIzzo/ENRON_DEVELOPMENT@ENRON_DEVELOPMENT, John \nSchwartzenburg/ENRON_DEVELOPMENT@ENRON_DEVELOPMENT, Rob \nWalls/ENRON_DEVELOPMENT@ENRON_DEVELOPMENT, Sanjay \nBhatnagar/ENRON_DEVELOPMENT@ENRON_DEVELOPMENT, Wade \nCline/ENRON_DEVELOPMENT@ENRON_DEVELOPMENT, David \nHaug/ENRON_DEVELOPMENT@ENRON_DEVELOPMENT, Frank \nStabler/ENRON_DEVELOPMENT@ENRON_DEVELOPMENT, Frank \nSayre/ENRON_DEVELOPMENT@ENRON_DEVELOPMENT, Rick \nBergsieker/ENRON_DEVELOPMENT@ENRON_DEVELOPMENT, Lance \nSchuler-Legal/HOU/ECT@ECT, Harold Bertram/HOU/ECT@ECT\ncc:  \n\nSubject: LRC Joint Venture\n\nPlease find the attached memo summarizing a proposed joint venture between \nEnron North America and Texaco involving our respective intrastate pipeline \nassets in Louisiana (i.e., Enron's LRC pipeline).  The joint venture would \nrestrict Enron and its affiliates from pursuing certain limited business \nopportunities involving specified pipeline assets that may be competitive \nwith the joint venture.  Specifically, these assets include: \n\n(i) the Acadian Gas Pipeline System (currently ultimately owned by Shell \nPetroleum Inc. USA), \n(ii) the Cypress Gas Pipeline System (currently ultimately owned by Shell \nPetroleum Inc. USA), \n(iii) the Louisiana Intrastate Gas System (currently ultimately owned by \nAmerican Electric Power Co. Inc.), \n(iv) the Louisiana Gas System (currently ultimately owned by Conoco Inc.); \nand \n(v) the Louisiana gas pipeline assets of Koch Gateway Pipeline Co. (currently \nultimately owned by Koch Industries).  \n\nIn keeping with Enron's internal policies, we are seeking your confirmation \nthat you have no objection to the non-compete provisions in this \ntransaction.  Please feel free to call Lance Schuler, Hal Bertram or me if \nyou have any questions.\n\nRegards,\nBrian\n\n\n\n\n\n\n"
+```
+ to the endpoint `127.0.0.1:5000/process-email` as a GET request returning the following
+response:
+```
+{
+    "entities": [
+        [
+            "Michael Moran",
+            "PERSON"
+        ],
+        [
+            "GPG",
+            "ORG"
+        ],
+        [
+            "Brian Redmond",
+            "PERSON"
+        ],
+        [
+            "Enron",
+            "ORG"
+        ],
+        [
+            "Texaco",
+            "ORG"
+        ],
+        [
+            "Enron",
+            "ORG"
+        ],
+        [
+            "LRC",
+            "ORG"
+        ],
+        [
+            "Enron",
+            "ORG"
+        ],
+        [
+            "the Acadian Gas Pipeline System",
+            "ORG"
+        ],
+        [
+            "Shell  ",
+            "ORG"
+        ],
+        [
+            "Petroleum Inc. USA",
+            "ORG"
+        ],
+        [
+            "Shell  ",
+            "ORG"
+        ],
+        [
+            "Petroleum Inc. USA",
+            "ORG"
+        ],
+        [
+            "the Louisiana Intrastate Gas System",
+            "ORG"
+        ],
+        [
+            "American Electric Power Co. Inc.",
+            "ORG"
+        ],
+        [
+            "the Louisiana Gas System",
+            "ORG"
+        ],
+        [
+            "Conoco Inc.",
+            "ORG"
+        ],
+        [
+            "Koch Gateway Pipeline Co.",
+            "ORG"
+        ],
+        [
+            "Koch Industries",
+            "ORG"
+        ],
+        [
+            "Enron",
+            "ORG"
+        ],
+        [
+            "Lance Schuler",
+            "PERSON"
+        ],
+        [
+            "Hal Bertram",
+            "PERSON"
+        ],
+        [
+            "Brian",
+            "PERSON"
+        ]
+    ],
+    "sentiment": "positive",
+    "topic": "Enron Oil&Gas"
+}
+```
+
+On POSTMAN the following pre-request script is used:
+```
+let query = "Message-ID: <18599553.1075842495069.JavaMail.evans@thyme>\nDate: Thu, 10 Feb 2000 03:29:00 -0800 (PST)\nFrom: drew.fossum@enron.com\nTo: bill.cordes@enron.com, dave.neubauer@enron.com, steven.harris@enron.com\nSubject: LRC Joint Venture\nMime-Version: 1.0\nContent-Type: text/plain; charset=us-ascii\nContent-Transfer-Encoding: 7bit\nX-From: Drew Fossum\nX-To: Bill Cordes, Dave Neubauer, Steven Harris\nX-cc: \nX-bcc: \nX-Folder: \\Drew_Fossum_Dec2000_June2001_1\\Notes Folders\\Sent\nX-Origin: FOSSUM-D\nX-FileName: dfossum.nsf\n\nI don't see any problem with this transaction since it appears to be limited \nto Louisiana assets, but the issue of whether we are impacted by the \nnoncompete agreement strikes me as a commercial call.  Please let me know if \nyou have any problem with the transaction and I will pursue it.  Thanks.  DF \n---------------------- Forwarded by Drew Fossum/ET&S/Enron on 02/10/2000 \n11:25 AM ---------------------------\n\n\n\nMichael Moran\n02/09/2000 01:58 PM\nTo: Louis Soldano/ET&S/Enron@ENRON, Dorothy McCoppin/FGT/Enron@ENRON, Phil \nLowry/OTS/Enron@ENRON\ncc:  \n\nSubject: LRC Joint Venture\n\nPlease see the attached and let me know if you have any problems so that GPG \ncan respond to Brian Redmond.\n---------------------- Forwarded by Michael Moran/GPGFIN/Enron on 02/09/2000 \n01:55 PM ---------------------------\n\n\nBrian Redmond@ECT\n02/09/2000 01:44 PM\nTo: Sherri Reinartz@ENRON, J Mark Metts/NA/Enron@Enron, Stephanie J \nHarris@ENRON_DEVELOPMENT, Rob Walls/ENRON_DEVELOPMENT@ENRON_DEVELOPMENT, Rex \nRogers/Corp/Enron@Enron, Charles Cheek/Corp/Enron@ENRON, Peggy Fowler@ENRON, \nAl Alexanderson/Enron@Gateway, Rebecca P Mark/HOU/AZURIX@AZURIX, John \nAle/HOU/AZURIX@AZURIX, Mark Frevert/LON/ECT@ECT, Michael R Brown/LON/ECT@ECT, \nMichael Burke/Houston/Eott@Eott, Steve Duffy/Houston/Eott@Eott, Cliff \nBaxter/HOU/ECT@ECT, Greg Whalley/HOU/ECT@ECT, Mark E Haedicke/HOU/ECT@ECT, \nTimothy J Detmering/HOU/ECT@ECT, Bill Donovan/EPSC/HOU/ECT@ECT, Elizabeth \nLabanowski/EPSC/HOU/ECT@ECT, Stanley Horton/Corp/Enron@Enron, Michael \nMoran/ET&S/Enron@ENRON, Bill Cordes/ET&S/Enron@ENRON, Larry \nDeRoin/NPNG/Enron@ENRON, Janet Place/NPNG/Enron@ENRON, Ken Rice/Enron \nCommunications@Enron Communications, Kristina Mordaunt/Enron \nCommunications@Enron Communications, Andrew S Fastow/HOU/ECT@ECT, Scott \nSefton/HOU/ECT@ECT, Shirley A Hudler/HOU/ECT@ECT, Karen S Owens@ees, Vicki \nSharp/HOU/EES@EES, Ken Karas/EWC/Enron@Enron, Adam Umanoff/EWC/Enron@Enron, \nJoe Kishkill/ENRON_DEVELOPMENT@ENRON_DEVELOPMENT, Randy \nYoung/ENRON_DEVELOPMENT@ENRON_DEVELOPMENT, James A \nHughes/ENRON_DEVELOPMENT@ENRON_DEVELOPMENT, Bruce \nLundstrom/ENRON_DEVELOPMENT@ENRON_DEVELOPMENT, Larry L \nIzzo/ENRON_DEVELOPMENT@ENRON_DEVELOPMENT, John \nSchwartzenburg/ENRON_DEVELOPMENT@ENRON_DEVELOPMENT, Rob \nWalls/ENRON_DEVELOPMENT@ENRON_DEVELOPMENT, Sanjay \nBhatnagar/ENRON_DEVELOPMENT@ENRON_DEVELOPMENT, Wade \nCline/ENRON_DEVELOPMENT@ENRON_DEVELOPMENT, David \nHaug/ENRON_DEVELOPMENT@ENRON_DEVELOPMENT, Frank \nStabler/ENRON_DEVELOPMENT@ENRON_DEVELOPMENT, Frank \nSayre/ENRON_DEVELOPMENT@ENRON_DEVELOPMENT, Rick \nBergsieker/ENRON_DEVELOPMENT@ENRON_DEVELOPMENT, Lance \nSchuler-Legal/HOU/ECT@ECT, Harold Bertram/HOU/ECT@ECT\ncc:  \n\nSubject: LRC Joint Venture\n\nPlease find the attached memo summarizing a proposed joint venture between \nEnron North America and Texaco involving our respective intrastate pipeline \nassets in Louisiana (i.e., Enron's LRC pipeline).  The joint venture would \nrestrict Enron and its affiliates from pursuing certain limited business \nopportunities involving specified pipeline assets that may be competitive \nwith the joint venture.  Specifically, these assets include: \n\n(i) the Acadian Gas Pipeline System (currently ultimately owned by Shell \nPetroleum Inc. USA), \n(ii) the Cypress Gas Pipeline System (currently ultimately owned by Shell \nPetroleum Inc. USA), \n(iii) the Louisiana Intrastate Gas System (currently ultimately owned by \nAmerican Electric Power Co. Inc.), \n(iv) the Louisiana Gas System (currently ultimately owned by Conoco Inc.); \nand \n(v) the Louisiana gas pipeline assets of Koch Gateway Pipeline Co. (currently \nultimately owned by Koch Industries).  \n\nIn keeping with Enron's internal policies, we are seeking your confirmation \nthat you have no objection to the non-compete provisions in this \ntransaction.  Please feel free to call Lance Schuler, Hal Bertram or me if \nyou have any questions.\n\nRegards,\nBrian\n\n\n\n\n\n\n"
+pm.environment.set('query', JSON.stringify(query));
+```
+
+With the Body being set to ``{{query}}`` and data type as `raw`
+and `application/json` selected.
+
+######Running tests
+If you have the [make](https://www.gnu.org/software/make/) utility
+installed then you can run tests like so, once the virtualenv has been
+loaded:
+```
+make test
+```
+#####steps to complete a training run
+- Set config variables in [config.py](config.py)
+```
+#Set the number of LDA topics here
+NUM_LDA_TOPICS=3
+#Set the directory to where all models will be stored
+#This is the same directory from which models are picked up
+#for inteference
+EXP_DIR='exp/v6/topics_' + str(NUM_LDA_TOPICS)
+
+#Data processing configs
+#This is the list of raw files that is input to data_process.py
+DATA_FILE_LIST_PATH='lists/file_list'
+#The output folder where data_process.py outputs cleaned and processed files
+PROCESSED_OUTPUT_FOLDER='data/processed_files'
+#Once the files have been processed, create a list of files for training
+#using a Unix utility like find. This config variable is consumed in
+#train_lda.py
+PROCESSED_FILE_LIST_PATH='lists/processed_files_list'  
+```
+- Create a list file for the raw data using find e.g. `find data/maildir -type f  > lists/file_list`
+- Run [data_process.py](data_process.py) to prepare cleaned training data
+- Create a list file for the processed data using find e.g. `find data/processed_files -type f  > lists/processed_file_list`
+- Run [train_lda.py](train_lda.py) to create LDA models stored in `EXP_DIR`
+- Run `make test` or deploy the Flask app locally to hit the `/process-email` endpoint as mentioned 
 ### Note on the data-set
 
 **1. Cleaning the data set**
@@ -51,7 +210,7 @@ string level to remove email headers, and the other operates on a
 per-line basis to mark lines that are suitable for text-processing.
 The main function `process_email` is used in data cleaning scripts
 and for data that is incoming to the `/process-email` API endpoint.
-The script that does the data cleaning is [data_process.py](data_process.py). This 
+The script that does the data cleaning is [data_process.py](scripts/data_process.py). This 
 script takes a list of files and outputs processed files. The file
 list is typically created using a Unix utility like `find`. 
 
@@ -168,7 +327,7 @@ was followed. This solution exercise does borrow code from this blog post and is
 in the comments. 
 
 ####Training LDA models
-Models were created using the script [train_lda.py](scripts/train_lda.py). The folder that contains
+Models were created using the script [train_lda.py](train_lda.py). The folder that contains
 the final model is in [exp/v6/topics_5](exp/v6/topics_5). This is also set as a config
 folder name is also set as a config variable in [config.py](config.py). The number of topics
 is also set in this [config.py](config.py) file. The config file is also used to specify the
@@ -208,7 +367,7 @@ There is a disadvantage here though, since there can  be documents with extremel
 whose expletive filled terms occur only a few hundred times in the corpus. To allow for more
 specificity for the purpose of this exercise a model with 10 topics. This does mean that there
 is greater overlap in the topics of this model and hence a lower coherence score of 0.43. (Reference log-file : [model.log](exp/v6/topics_10/model.log)).
-This visualization for this topic model is available [here]([LDAVisualization.html](exp/v6/topics_10/LDA_Visualization.html)).
+This visualization for this topic model is available [here]([LDAVisualization.html](https://htmlpreview.github.io/?https://github.com/aanchan/enron-lda/blob/main/exp/v6/topics_10/LDA_Visualization.html)).
 The topics appear as follows.
 
 ```

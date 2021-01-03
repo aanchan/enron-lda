@@ -8,6 +8,17 @@ from nlp_code.lda.lda_inference import do_lda_inference
 import logging
 from flask import jsonify
 
+class DefaultView(MethodView):
+    def get(self):
+        try:
+            return "Welcome to the Enron Email Parser"
+        except Exception as e:
+            exception = e.args[0]
+            logging.error("Exception occurred in view handler: ".format(exception), exc_info=1)
+            resp_dict = {'error': exception}
+            return Response(resp_dict, status=400)
+
+request_r=request
 class EmailAPI(MethodView):
     def get(self):
         try:
