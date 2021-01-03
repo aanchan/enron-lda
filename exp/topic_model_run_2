@@ -1,0 +1,29 @@
+[(0,
+  '0.027*"provide" + 0.021*"would" + 0.021*"issue" + 0.014*"include" + '
+  '0.012*"may" + 0.011*"order" + 0.010*"require" + 0.009*"risk" + 0.008*"rule" '
+  '+ 0.008*"option"'),
+ (1,
+  '0.075*"agreement" + 0.049*"counterparty" + 0.044*"transaction" + '
+  '0.043*"contract" + 0.039*"approval" + 0.037*"deal" + 0.034*"approve" + '
+  '0.029*"execute" + 0.025*"change" + 0.021*"form"'),
+ (2,
+  '0.165*"shall" + 0.063*"date" + 0.039*"day" + 0.027*"period" + '
+  '0.027*"applicable" + 0.026*"rate" + 0.026*"disclosure" + 0.022*"quantity" + '
+  '0.021*"calendar" + 0.021*"float"'),
+ (3,
+  '0.042*"thank" + 0.026*"attach" + 0.020*"send" + 0.019*"know" + 0.018*"list" '
+  '+ 0.018*"need" + 0.017*"call" + 0.016*"let" + 0.013*"question" + '
+  '0.013*"copy"'),
+ (4,
+  '0.037*"trading" + 0.028*"company" + 0.023*"financial" + 0.018*"credit" + '
+  '0.017*"business" + 0.014*"online" + 0.012*"group" + 0.012*"future" + '
+  '0.011*"member" + 0.011*"new"'),
+ (5,
+  '0.031*"go" + 0.031*"get" + 0.018*"want" + 0.018*"think" + 0.015*"be" + '
+  '0.015*"would" + 0.014*"know" + 0.014*"good" + 0.013*"work" + 0.013*"time"'),
+ (6,
+  '0.046*"product" + 0.041*"price" + 0.039*"trade" + 0.036*"gas" + '
+  '0.028*"power" + 0.027*"customer" + 0.026*"month" + 0.022*"market" + '
+  '0.019*"energy" + 0.013*"volume"')]
+Coherence Score:  0.4630192935512919
+Perplexity:  -7.841963301794608

@@ -1,0 +1,4 @@
+
+Coherence Score: 0.4847011375576803
+Perplexity: -8.005763777434774
+(0, '0.019*"credit" + 0.017*"trade" + 0.016*"trading" + 0.013*"master" + 0.012*"form" + 0.012*"financial" + 0.011*"legal" + 0.010*"company" + 0.010*"provide" + 0.009*"issue"')(1, '0.031*"counterparty" + 0.030*"shall" + 0.029*"copy" + 0.024*"change" + 0.023*"date" + 0.022*"approve" + 0.022*"file" + 0.020*"transaction" + 0.020*"execute" + 0.019*"approval"')(2, '0.014*"look" + 0.013*"email" + 0.013*"list" + 0.012*"name" + 0.011*"week" + 0.011*"could" + 0.010*"mail" + 0.010*"help" + 0.009*"find" + 0.009*"back"')(3, '0.011*"year" + 0.010*"way" + 0.009*"bad" + 0.009*"good" + 0.008*"come" + 0.008*"house" + 0.008*"ticket" + 0.007*"take" + 0.007*"right" + 0.007*"little"')(4, '0.031*"price" + 0.031*"gas" + 0.023*"power" + 0.019*"month" + 0.019*"customer" + 0.016*"market" + 0.014*"margin" + 0.011*"swap" + 0.010*"contract" + 0.009*"company"')

@@ -4,6 +4,7 @@ from views import EmailAPI
 
 def create_app():
     app_obj = Flask(__name__)
+    app_obj.config.from_object('config')
     return app_obj
 
 def register_views(app_obj):

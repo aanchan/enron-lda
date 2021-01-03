@@ -1,0 +1,21 @@
+
+Coherence Score: 0.39954899561617274
+Perplexity: -13.983990628738834
+(0, '0.068*"product" + 0.055*"company" + 0.048*"financial" + 0.037*"new" + 0.030*"customer" + 0.030*"business" + 0.028*"future" + 0.025*"service" + 0.025*"energy" + 0.020*"market"')
+(1, '0.090*"power" + 0.053*"margin" + 0.042*"swap" + 0.031*"rate" + 0.029*"state" + 0.029*"value" + 0.025*"pay" + 0.024*"market" + 0.020*"cost" + 0.019*"utility"')(2, '0.087*"information" + 0.082*"receive" + 0.081*"name" + 0.072*"email" + 0.059*"mail" + 0.047*"phone" + 0.046*"contact" + 0.043*"message" + 0.037*"address" + 0.032*"return"')
+(3, '0.079*"list" + 0.061*"transaction" + 0.055*"request" + 0.055*"form" + 0.050*"follow" + 0.037*"provide" + 0.036*"note" + 0.036*"access" + 0.030*"document" + 0.025*"include"')(4, '0.265*"report" + 0.141*"datum" + 0.121*"daily" + 0.091*"trader" + 0.078*"test" + 0.069*"production" + 0.034*"decline" + 0.031*"image" + 0.015*"fail" + 0.010*"organizational"')
+(5, '0.193*"click" + 0.084*"book" + 0.067*"correct" + 0.055*"tax" + 0.054*"select" + 0.050*"proceed" + 0.045*"presentation" + 0.038*"corporate" + 0.034*"game" + 0.032*"ect"')
+(6, '0.074*"weather" + 0.067*"many" + 0.043*"storage" + 0.039*"minute" + 0.032*"lot" + 0.030*"experience" + 0.027*"real" + 0.026*"ago" + 0.026*"season" + 0.023*"sound"')
+(7, '0.079*"question" + 0.077*"regard" + 0.074*"date" + 0.058*"file" + 0.057*"copy" + 0.055*"forward" + 0.050*"sign" + 0.047*"number" + 0.039*"confirm" + 0.038*"letter"')
+(8, '0.034*"look" + 0.029*"week" + 0.028*"good" + 0.027*"could" + 0.027*"help" + 0.027*"take" + 0.026*"back" + 0.025*"well" + 0.024*"give" + 0.021*"day"')
+(9, '0.075*"legal" + 0.057*"issue" + 0.042*"set" + 0.037*"discuss" + 0.031*"team" + 0.024*"however" + 0.021*"counsel" + 0.021*"agree" + 0.021*"respect" + 0.020*"lawyer"')
+(10, '0.228*"trade" + 0.201*"price" + 0.200*"gas" + 0.060*"day" + 0.052*"account" + 0.043*"quote" + 0.042*"natural" + 0.024*"seller" + 0.023*"average" + 0.016*"mmbtu"')
+(11, '0.096*"senior" + 0.085*"assignment" + 0.076*"director" + 0.068*"board" + 0.067*"officer" + 0.062*"president" + 0.059*"job" + 0.057*"join" + 0.052*"special" + 0.051*"vice"')
+(12, '0.110*"party" + 0.090*"line" + 0.087*"project" + 0.083*"interest" + 0.058*"buyer" + 0.055*"notify" + 0.046*"wait" + 0.043*"locate" + 0.037*"attention" + 0.035*"certificate"')
+(13, '0.170*"purchase" + 0.135*"sale" + 0.129*"buy" + 0.127*"sell" + 0.059*"fee" + 0.054*"calculate" + 0.035*"space" + 0.034*"finish" + 0.032*"permit" + 0.017*"recall"')
+(14, '0.193*"index" + 0.163*"confidentiality" + 0.086*"occur" + 0.063*"peak" + 0.062*"nice" + 0.046*"delay" + 0.034*"remove" + 0.026*"exact" + 0.026*"automatically" + 0.018*"monitor"')
+(15, '0.054*"year" + 0.046*"first" + 0.038*"end" + 0.037*"last" + 0.037*"right" + 0.036*"way" + 0.035*"notice" + 0.024*"old" + 0.018*"mean" + 0.018*"put"')
+(16, '0.252*"credit" + 0.191*"contract" + 0.156*"month" + 0.105*"period" + 0.092*"term" + 0.036*"applicable" + 0.031*"effective" + 0.020*"limit" + 0.018*"bill" + 0.016*"contractual"')
+(17, '0.093*"firm" + 0.070*"rule" + 0.060*"attorney" + 0.058*"delivery" + 0.053*"confidential" + 0.045*"capacity" + 0.038*"provision" + 0.034*"receipt" + 0.034*"affiliate" + 0.034*"client"')
+(18, '0.122*"change" + 0.086*"approval" + 0.069*"execute" + 0.060*"review" + 0.054*"comment" + 0.048*"add" + 0.040*"type" + 0.036*"draft" + 0.033*"application" + 0.026*"option"')
+(19, '0.066*"group" + 0.056*"member" + 0.052*"approve" + 0.044*"schedule" + 0.042*"place" + 0.041*"meeting" + 0.040*"database" + 0.030*"employee" + 0.027*"available" + 0.027*"plan"')

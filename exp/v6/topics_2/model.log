@@ -1,0 +1,5 @@
+
+Coherence Score: 0.4699538912108624
+Perplexity: -8.018780214661385
+(0, '0.009*"look" + 0.008*"copy" + 0.008*"good" + 0.007*"list" + 0.007*"name" + 0.007*"email" + 0.007*"week" + 0.007*"fax" + 0.006*"regard" + 0.006*"information"')
+(1, '0.010*"credit" + 0.010*"trade" + 0.010*"product" + 0.010*"counterparty" + 0.009*"trading" + 0.009*"price" + 0.009*"gas" + 0.008*"company" + 0.008*"contract" + 0.007*"transaction"')

@@ -1,0 +1,13 @@
+
+Coherence Score: 0.43010506799306264
+Perplexity: -8.346610355258267
+(0, '0.039*"trade" + 0.038*"product" + 0.038*"counterparty" + 0.035*"trading" + 0.031*"company" + 0.027*"financial" + 0.015*"future" + 0.014*"energy" + 0.012*"customer" + 0.012*"new"')
+(1, '0.062*"price" + 0.061*"gas" + 0.045*"power" + 0.041*"month" + 0.024*"period" + 0.022*"swap" + 0.019*"day" + 0.019*"volume" + 0.016*"term" + 0.016*"rate"')
+(2, '0.050*"master" + 0.048*"information" + 0.043*"name" + 0.040*"email" + 0.033*"mail" + 0.032*"receive" + 0.028*"click" + 0.026*"copy" + 0.025*"access" + 0.024*"message"')
+(3, '0.056*"credit" + 0.042*"shall" + 0.037*"form" + 0.034*"transaction" + 0.033*"request" + 0.032*"contract" + 0.031*"date" + 0.031*"approve" + 0.028*"execute" + 0.020*"letter"')
+(4, '0.020*"member" + 0.017*"group" + 0.016*"report" + 0.015*"business" + 0.015*"team" + 0.014*"year" + 0.012*"new" + 0.011*"provide" + 0.010*"employee" + 0.010*"process"')
+(5, '0.050*"book" + 0.042*"password" + 0.033*"tax" + 0.027*"presentation" + 0.021*"side" + 0.019*"ect" + 0.019*"sound" + 0.019*"bill" + 0.018*"recommendation" + 0.017*"invoice"')
+(6, '0.060*"approval" + 0.032*"database" + 0.027*"order" + 0.023*"referenced" + 0.021*"state" + 0.018*"issue" + 0.017*"purchase" + 0.016*"index" + 0.013*"law" + 0.013*"settlement"')
+(7, '0.043*"assignment" + 0.043*"bad" + 0.037*"ticket" + 0.033*"asap" + 0.027*"special" + 0.026*"vice" + 0.025*"season" + 0.024*"game" + 0.021*"ca" + 0.018*"nice"')
+(8, '0.023*"good" + 0.019*"take" + 0.018*"come" + 0.016*"back" + 0.015*"day" + 0.014*"week" + 0.013*"well" + 0.013*"way" + 0.012*"hope" + 0.011*"tell"')
+(9, '0.027*"list" + 0.022*"question" + 0.022*"regard" + 0.017*"change" + 0.016*"forward" + 0.014*"sign" + 0.013*"like" + 0.013*"legal" + 0.013*"copy" + 0.013*"file"')

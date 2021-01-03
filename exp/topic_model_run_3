@@ -1,0 +1,18 @@
+ (1,
+  '0.045*"thank" + 0.032*"attach" + 0.023*"send" + 0.022*"agreement" + '
+  '0.018*"list" + 0.017*"credit" + 0.016*"copy" + 0.015*"form" + 0.014*"know" '
+  '+ 0.014*"call"'),
+ (2,
+  '0.087*"price" + 0.058*"shall" + 0.056*"month" + 0.035*"day" + '
+  '0.033*"volume" + 0.029*"date" + 0.021*"term" + 0.021*"period" + '
+  '0.020*"rate" + 0.017*"index"'),
+ (3,
+  '0.021*"get" + 0.021*"go" + 0.018*"know" + 0.016*"would" + 0.014*"want" + '
+  '0.012*"think" + 0.012*"work" + 0.011*"time" + 0.010*"let" + 0.010*"be"'),
+ (4,
+  '0.028*"trading" + 0.025*"trade" + 0.019*"company" + 0.017*"gas" + '
+  '0.017*"product" + 0.016*"power" + 0.014*"customer" + 0.013*"financial" + '
+  '0.013*"market" + 0.011*"new"')]
+Perplexity:  -7.749992112713961
+Coherence Score:  0.5054663450384533
+
