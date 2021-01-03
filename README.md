@@ -38,6 +38,7 @@ For all other topics the response looks like this JSON.
 
 ### To run on a local machine 
 Run the following commands on a local machine using
+
 Environment tested on Python 3.6.9, Ubuntu 18.04, pip 20.3
 ```
 python3 -m venv env/global_relay
@@ -46,7 +47,7 @@ pip install --upgrade pip
 pip install cython
 pip install numpy
 pip install --no-cache-dir -r requirements.txt
-python -m spacy download en_core_web_sm
+python3 -m spacy download en
 ```
 
 Additionally you might have to go in to the Python REPL and install NLTK stopwords like so:
