@@ -361,7 +361,7 @@ tokens after lemmatization and stop-word removal are available in the pickle fil
 Topic models were trained for 2,4, 5, 10 and 20 topics. Of all of these the highest
 coherence score was obtained for a model with 5 topics with a coherence score of 0.523 
 (Reference log-file : [model.log](exp/v6/topics_5/model.log)). The higher the coherence
-score the lesser the topic overlap. The visualization for this models is available [here]([LDAVisualization.html](exp/v6/topics_5/LDA_Visualization.html)).
+score the lesser the topic overlap. The visualization for this models is available [here](https://htmlpreview.github.io/?https://github.com/aanchan/enron-lda/blob/main/exp/v6/topics_5/LDA_Visualization.html
 
 There is a disadvantage here though, since there can  be documents with extremely rare terms. Here is an example of a [NSFW email](/home/aanchan/work/global_relay/src/data/maildir/lenhart-m/sent/sent/780.) 
 whose expletive filled terms occur only a few hundred times in the corpus. To allow for more
