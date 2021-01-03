@@ -37,11 +37,23 @@ For all other topics the response looks like this JSON.
 ```
 
 ### To run on a local machine 
-Run the following commands on a local machine using - Python 3.6.9:
+Run the following commands on a local machine using
+Environment tested on Python 3.6.9, Ubuntu 18.04
 ```
 python3 -m venv env/global_relay
 source env/global_relay/bin/activate
-pip install -r requirements.txt
+pip install --no-cache-dir -r requirements.txt
+python -m spacy download en_core_web_sm
+```
+
+Additionally you might have to go in to the Python REPL and install NLTK stopwords like so:
+```
+import nltk
+nltk.download('stopwords')
+```
+
+
+```
 export FLASK_APP=application.py
 flask run
 ```
