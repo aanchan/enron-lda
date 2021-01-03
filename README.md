@@ -367,7 +367,7 @@ There is a disadvantage here though, since there can  be documents with extremel
 whose expletive filled terms occur only a few hundred times in the corpus. To allow for more
 specificity for the purpose of this exercise a model with 10 topics. This does mean that there
 is greater overlap in the topics of this model and hence a lower coherence score of 0.43. (Reference log-file : [model.log](exp/v6/topics_10/model.log)).
-This visualization for this topic model is available [here]([LDAVisualization.html](https://htmlpreview.github.io/?https://github.com/aanchan/enron-lda/blob/main/exp/v6/topics_10/LDA_Visualization.html)).
+This visualization for this topic model is available [here](https://htmlpreview.github.io/?https://github.com/aanchan/enron-lda/blob/main/exp/v6/topics_10/LDA_Visualization.html).
 The topics appear as follows.
 
 ```
