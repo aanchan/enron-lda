@@ -10,7 +10,7 @@
     - If the Email body is related to Enron's oil & gas business, then the output also lists each
 Person or Organization mentioned. 
 
-###Project Description      
+### Project Description      
 Based on these requirements a service is written in Python. A 
 single API endpoint called `/process-email` is made avaliable 
 as a REST API GET endpoint. To expose the API functionality
@@ -164,14 +164,14 @@ pm.environment.set('query', JSON.stringify(query));
 With the Body being set to ``{{query}}`` and data type as `raw`
 and `application/json` selected.
 
-######Running tests
+###### Running tests
 If you have the [make](https://www.gnu.org/software/make/) utility
 installed then you can run tests like so, once the virtualenv has been
 loaded:
 ```
 make test
 ```
-#####steps to complete a training run
+##### Steps to complete a training run
 - Set config variables in [config.py](config.py)
 ```
 #Set the number of LDA topics here
