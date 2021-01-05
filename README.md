@@ -349,7 +349,7 @@ folder name is also set as a config variable in [config.py](config.py). The numb
 is also set in this [config.py](config.py) file. The config file is also used to specify the
 path to the list of processed files.
 
-####Text feature processing for LDA models
+#### Text feature processing for LDA models
 Additional text feature processing is carried out prior to LDA training and inference. This is all in the module [lda_data_processing.py](modules/lda/lda_data_processing.py)
 Each e-mail  document is collapsed to a single line string without new-line characters. The steps to pre-processing are as follows:
 - Use gensim's simple_preprocess to remove punctuations, convert to lowercase, remove apostrophes
