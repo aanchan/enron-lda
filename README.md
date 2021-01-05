@@ -306,7 +306,7 @@ analysis tool that works on a pre-defined dictionary or lexicon. It is demonstra
   negative sentiment: compound score <= -0.05
   ```
   This clearly could be improved. The main code for Sentiment Analysis appears in
-  the module [sentiment.py](modules/sentiment.py).
+  the module [sentiment.py](nlp_code/sentiment.py).
 - An interesting research paper which has been heavily cited by
 Peter Turney named [Thumbs Up or Thumbs Down? Semantic Orientation
   Applied to Supervised Classification of Reviews](https://www.aclweb.org/anthology/P02-1053.pdf)
@@ -332,7 +332,7 @@ For Entity extraction again, nothing novel was done as a part of this project. S
 was used out of the box to determine named entities in an e-mail. Spacy is also used for
 topic extraction. The implementation in this project is perhaps not the most efficient
 with importing and calling Spacy twice over in the code. The main code for entity extraction
-appears in [entities.py](modules/entities.py).
+appears in [entities.py](nlp_code/entities.py).
 
 ### Topic Extraction - Unsupervised Document Clustering
 Topic extraction was chosen with Latent Dirichlet Allocation (LDA) after considering 
